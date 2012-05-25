@@ -76,7 +76,6 @@
     <binding command="MonoDevelop.Debugger.DebugCommands.ToggleBreakpoint" shortcut="Meta+\" />
     <binding command="MonoDevelop.Debugger.DebugCommands.EnableDisableBreakpoint" shortcut="Alt+Meta+/" />
     <binding command="MonoDevelop.Refactoring.RefactoryCommands.GotoDeclaration" shortcut="Meta+D" />
-    <binding command="MonoDevelop.Refactoring.RefactoryCommands.FindReferences" shortcut="Shift+Meta+D" />
     <binding command="MonoDevelop.Refactoring.RefactoryCommands.QuickFix" shortcut="Alt+Return" />
     <binding command="MonoDevelop.Refactoring.RefactoryCommands.ImportSymbol" shortcut="Control+Alt+Space" />
     <binding command="MonoDevelop.AnalysisCore.AnalysisCommands.ShowFixes" shortcut="Control+." />
