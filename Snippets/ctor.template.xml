@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version>1.0</Version>
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>ctor</Shortcut>
+      <_Description>Template for constructor</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="classname" isEditable="false">
+        <_ToolTip>Class name</_ToolTip>
+        <Function>GetCurrentClassName()</Function>
+      </Variable>
+      <Variable name="modifier" isEditable="false">
+        <Function>GetConstructorModifier()</Function>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[$modifier$$classname$()
+{
+	$end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

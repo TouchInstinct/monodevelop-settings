@@ -3,32 +3,37 @@
   <PolicySet name="Default" id="Default">
     <DotNetNamingPolicy>
       <DirectoryNamespaceAssociation>PrefixedHierarchical</DirectoryNamespaceAssociation>
-      <ResourceNamePolicy>FileFormatDefault</ResourceNamePolicy>
+      <ResourceNamePolicy>FileName</ResourceNamePolicy>
     </DotNetNamingPolicy>
     <VersionControlPolicy inheritsSet="Mono" />
     <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/plain" />
     <TextStylePolicy inheritsSet="Mono" inheritsScope="text/plain" scope="text/x-csharp">
       <FileWidth>120</FileWidth>
       <TabWidth>4</TabWidth>
+      <NoTabsAfterNonTabs>True</NoTabsAfterNonTabs>
     </TextStylePolicy>
     <CSharpFormattingPolicy inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp">
       <IndentSwitchBody>True</IndentSwitchBody>
+      <PropertyBraceStyle>NextLine</PropertyBraceStyle>
       <PropertyGetBraceStyle>NextLine</PropertyGetBraceStyle>
       <PropertySetBraceStyle>NextLine</PropertySetBraceStyle>
+      <EventBraceStyle>NextLine</EventBraceStyle>
+      <EventAddBraceStyle>NextLine</EventAddBraceStyle>
+      <EventRemoveBraceStyle>NextLine</EventRemoveBraceStyle>
+      <StatementBraceStyle>NextLine</StatementBraceStyle>
       <ForBraceForcement>AddBraces</ForBraceForcement>
-      <WhileBraceForcement>AddBraces</WhileBraceForcement>
-      <UsingBraceForcement>AddBraces</UsingBraceForcement>
       <ElseNewLinePlacement>NewLine</ElseNewLinePlacement>
       <ElseIfNewLinePlacement>SameLine</ElseIfNewLinePlacement>
       <CatchNewLinePlacement>NewLine</CatchNewLinePlacement>
       <FinallyNewLinePlacement>NewLine</FinallyNewLinePlacement>
+      <WhileNewLinePlacement>NewLine</WhileNewLinePlacement>
       <BeforeMethodDeclarationParentheses>False</BeforeMethodDeclarationParentheses>
       <BeforeMethodCallParentheses>False</BeforeMethodCallParentheses>
       <BeforeConstructorDeclarationParentheses>False</BeforeConstructorDeclarationParentheses>
       <BeforeIndexerDeclarationBracket>False</BeforeIndexerDeclarationBracket>
       <BeforeDelegateDeclarationParentheses>False</BeforeDelegateDeclarationParentheses>
-      <AfterDelegateDeclarationParameterComma>True</AfterDelegateDeclarationParameterComma>
       <NewParentheses>False</NewParentheses>
+      <BeforeNewParameterComma>True</BeforeNewParameterComma>
       <SpacesBeforeBrackets>False</SpacesBeforeBrackets>
     </CSharpFormattingPolicy>
     <StandardHeader>
@@ -116,7 +121,7 @@
         <NamingRule>
           <Name>Fields (Non Private)</Name>
           <AffectedEntity>Field</AffectedEntity>
-          <VisibilityMask>Internal, Public</VisibilityMask>
+          <VisibilityMask>Internal, Protected, Public</VisibilityMask>
           <NamingStyle>PascalCase</NamingStyle>
           <IncludeInstanceMembers>True</IncludeInstanceMembers>
           <IncludeStaticEntities>True</IncludeStaticEntities>
@@ -131,22 +136,20 @@
         </NamingRule>
         <NamingRule>
           <Name>Fields (Private)</Name>
-          <RequiredPrefixes>
+          <AllowedPrefixes>
             <String>_</String>
-          </RequiredPrefixes>
+            <String>m_</String>
+          </AllowedPrefixes>
           <AffectedEntity>Field, ReadonlyField</AffectedEntity>
-          <VisibilityMask>Private, Protected</VisibilityMask>
+          <VisibilityMask>Private</VisibilityMask>
           <NamingStyle>CamelCase</NamingStyle>
           <IncludeInstanceMembers>True</IncludeInstanceMembers>
           <IncludeStaticEntities>False</IncludeStaticEntities>
         </NamingRule>
         <NamingRule>
           <Name>Static Fields (Private)</Name>
-          <RequiredPrefixes>
-            <String>_</String>
-          </RequiredPrefixes>
           <AffectedEntity>Field</AffectedEntity>
-          <VisibilityMask>Private, Protected</VisibilityMask>
+          <VisibilityMask>Private</VisibilityMask>
           <NamingStyle>CamelCase</NamingStyle>
           <IncludeInstanceMembers>False</IncludeInstanceMembers>
           <IncludeStaticEntities>True</IncludeStaticEntities>
@@ -211,6 +214,14 @@
           <AffectedEntity>TypeParameter</AffectedEntity>
           <VisibilityMask>VisibilityMask</VisibilityMask>
           <NamingStyle>PascalCase</NamingStyle>
+          <IncludeInstanceMembers>True</IncludeInstanceMembers>
+          <IncludeStaticEntities>True</IncludeStaticEntities>
+        </NamingRule>
+        <NamingRule>
+          <Name>Local Variables</Name>
+          <AffectedEntity>LocalVariable</AffectedEntity>
+          <VisibilityMask>VisibilityMask</VisibilityMask>
+          <NamingStyle>CamelCase</NamingStyle>
           <IncludeInstanceMembers>True</IncludeInstanceMembers>
           <IncludeStaticEntities>True</IncludeStaticEntities>
         </NamingRule>

@@ -80,5 +80,6 @@
     <binding command="MonoDevelop.Refactoring.RefactoryCommands.ImportSymbol" shortcut="Control+Alt+Space" />
     <binding command="MonoDevelop.AnalysisCore.AnalysisCommands.ShowFixes" shortcut="Control+." />
     <binding command="MonoDevelop.Ide.Commands.EditCommands.FoldDefinitions" shortcut="Control+Meta+Up" />
+    <binding command="MonoDevelop.Ide.CodeFormatting.CodeFormattingCommands.FormatBuffer" shortcut="Control+`" />
   </scheme>
 </schemes>
