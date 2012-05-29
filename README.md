@@ -1,4 +1,5 @@
 # monodevelop-settings
+У этого проекта две основные цели. Во-первых, упрощение внедрения стиля кодирования. Во-вторых, сохранение и распространение лучших практик использования MonoDevelop.
 ## Что внутри?
  * Настройки для автоматического форматирования кода. 
  * Настройки именования.
@@ -15,13 +16,18 @@ git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelo
 ```
 После успешного клонирования надо изменить глобальные настройки MonoDevelop. `MonoDevelop → Preferences...`
 В разделе `Source code → .NET Naming Policies` выставляем `Policy: Touchin`
+
 ![](https://github.com/gaech/monodevelop-settings/raw/014f6c45b1b40f69aeba8641a3cca22af635abd9/Screenshots/global-naming-policies.jpg) 
 
 В разделе `Source code → Code Formatting → C# source code` выставляем `Policy: Touchin`
+
 ![](https://github.com/gaech/monodevelop-settings/raw/2622dd2c61fe2cb0cbf9cd8220285ac95ab7c199/Screenshots/global-code-formating.jpg)
 
 В разделе `Source code → Name Conventions` выставляем `Policy: Touchin`
+
 ![](https://github.com/gaech/monodevelop-settings/raw/014f6c45b1b40f69aeba8641a3cca22af635abd9/Screenshots/global-name-convention.jpg)
+
+Для того чтобы MonoDevelop выделял места, где нарушается соглашение о кодировании, можно включить анализ кода `Other → Source Analysis`
 
 Настройки будут влиять на новые проекты и решения. В существующих надо изменить настройки вручную. 
 
@@ -32,3 +38,16 @@ git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelo
 cd ~/Library/MonoDevelop-3.0/
 git pull origin master
 ```
+
+## Как поделиться своими наработками?
+ * Сделать fork проекта. Для этого достаточно нажать кнопку Fork на этой странице.
+ * Склонировать форк.
+ * Закоммитить свои изменения.
+ * Отправить изменения в основной репозиторий. Это делается с помощью кнопки Pull request.
+
+## Ссылки 
+ * [coding-style]: https://github.com/gaech/coding-style  (Соглашение о кодировании в компании Touch Instinct)
+
+## TODO
+ * Подсказка по хоткеям MonoDevelop
+ * Подсказка по шаблонам кода
