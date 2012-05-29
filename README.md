@@ -19,7 +19,7 @@ git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelo
 ```
 C:\Users\%USERNAME%\AppData\Roaming\MonoDevelop-X.X
 ```
-Копировать папку KeyBindings, равно как и делать репозиторий напрямую в папке настроек монодевелопа не рекомендуется. У макоси нет клавиши Control, а у винды нет клавиши Meta, так что их хоткеи несовместимы.
+Копировать папку KeyBindings, равно как и делать репозиторий напрямую в папке настроек монодевелопа, не рекомендуется. У макоси нет клавиши Control, а у винды нет клавиши Meta, так что их хоткеи несовместимы.
 
 После успешного клонирования надо изменить глобальные настройки MonoDevelop. `MonoDevelop → Preferences...`
 В разделе `Source code → .NET Naming Policies` выставляем `Policy: Touchin`
