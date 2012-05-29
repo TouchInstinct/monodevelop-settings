@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>monodevelop-settings by gaech</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>monodevelop-settings</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/gaech/monodevelop-settings">View the Project on GitHub <small>gaech/monodevelop-settings</small></a></p>
+        <ul>
+          <li><a href="https://github.com/gaech/monodevelop-settings/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/gaech/monodevelop-settings/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/gaech/monodevelop-settings">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>monodevelop-settings</h1>
+
+<p>У этого проекта две основные цели. Во-первых, упрощение внедрения стиля кодирования. Во-вторых, сохранение и распространение лучших практик использования MonoDevelop.</p>
+
+<h2>Что внутри?</h2>
+
+<ul>
+<li>Настройки для автоматического форматирования кода. </li>
+<li>Настройки именования.</li>
+<li>Настройки хоткеев. </li>
+<li>Code templates(ctor) адаптированные под наш стиль кодирования.</li>
+</ul><h2>Как установить настройки?</h2>
+
+<p>Настройки устанавливаются простым клонированием репозитория в нужную папку.</p>
+
+<div class="highlight">
+<pre>mkdir ~/Library/MonoDevelop-3.0-orig/
+cp -R ~/Library/MonoDevelop-3.0/ ~/Library/MonoDevelop-3.0-orig/
+rm -rf ~/Library/MonoDevelop-3.0/
+git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelop-3.0/
+</pre>
+</div>
+
+
+<p>После успешного клонирования надо изменить глобальные настройки MonoDevelop. <code>MonoDevelop → Preferences...</code>
+В разделе <code>Source code → .NET Naming Policies</code> выставляем <code>Policy: Touchin</code></p>
+
+<p><img src="https://github.com/gaech/monodevelop-settings/raw/014f6c45b1b40f69aeba8641a3cca22af635abd9/Screenshots/global-naming-policies.jpg" alt=""></p>
+
+<p>В разделе <code>Source code → Code Formatting → C# source code</code> выставляем <code>Policy: Touchin</code></p>
+
+<p><img src="https://github.com/gaech/monodevelop-settings/raw/2622dd2c61fe2cb0cbf9cd8220285ac95ab7c199/Screenshots/global-code-formating.jpg" alt=""></p>
+
+<p>В разделе <code>Source code → Name Conventions</code> выставляем <code>Policy: Touchin</code></p>
+
+<p><img src="https://github.com/gaech/monodevelop-settings/raw/014f6c45b1b40f69aeba8641a3cca22af635abd9/Screenshots/global-name-convention.jpg" alt=""></p>
+
+<p>Для того чтобы MonoDevelop выделял места, где нарушается соглашение о кодировании, можно включить анализ кода <code>Other → Source Analysis</code></p>
+
+<p><img src="https://github.com/gaech/monodevelop-settings/raw/b2c2185b757fb934668d73ae1a79c9ad76448059/Screenshots/source-analysis.jpg" alt=""></p>
+
+<p>Настройки будут влиять на новые проекты и решения. В существующих надо изменить настройки вручную. </p>
+
+<p>Если по какой-то причине вы не хотите использовать все общие настройки, то можно скопировать отдельно нужны вам файлы. </p>
+
+<h2>Обновление настроек</h2>
+
+<div class="highlight">
+<pre><span class="nb">cd</span> ~/Library/MonoDevelop-3.0/
+git pull origin master
+</pre>
+</div>
+
+
+<h2>Как поделиться своими наработками?</h2>
+
+<ul>
+<li>Сделать fork проекта. Для этого достаточно нажать кнопку Fork на этой странице.</li>
+<li>Склонировать форк.</li>
+<li>Закоммитить свои изменения.</li>
+<li>Отправить изменения в основной репозиторий. Это делается с помощью кнопки Pull request.</li>
+</ul><h2>Ссылки</h2>
+
+<ul>
+<li><a href="https://github.com/gaech/coding-style">https://github.com/gaech/coding-style</a></li>
+</ul><h2>TODO</h2>
+
+<ul>
+<li>Подсказка по хоткеям MonoDevelop</li>
+<li>Подсказка по шаблонам кода</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/gaech">gaech</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
