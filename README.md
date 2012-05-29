@@ -29,6 +29,8 @@ git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelo
 
 Для того чтобы MonoDevelop выделял места, где нарушается соглашение о кодировании, можно включить анализ кода `Other → Source Analysis`
 
+![](https://github.com/gaech/monodevelop-settings/raw/b2c2185b757fb934668d73ae1a79c9ad76448059/Screenshots/source-analysis.jpg) 
+
 Настройки будут влиять на новые проекты и решения. В существующих надо изменить настройки вручную. 
 
 Если по какой-то причине вы не хотите использовать все общие настройки, то можно скопировать отдельно нужны вам файлы. 
