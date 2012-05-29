@@ -19,6 +19,7 @@
       <StatementBraceStyle>NextLine</StatementBraceStyle>
       <ForBraceForcement>AddBraces</ForBraceForcement>
       <WhileBraceForcement>AddBraces</WhileBraceForcement>
+	  <IfElseBraceForcement>AddBraces</IfElseBraceForcement>
       <ElseNewLinePlacement>NewLine</ElseNewLinePlacement>
       <ElseIfNewLinePlacement>SameLine</ElseIfNewLinePlacement>
       <CatchNewLinePlacement>NewLine</CatchNewLinePlacement>
