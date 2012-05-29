@@ -14,9 +14,9 @@ cp -R ~/Library/MonoDevelop-3.0/ ~/Library/MonoDevelop-3.0-orig/
 rm -rf ~/Library/MonoDevelop-3.0/
 git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelop-3.0/
 ```
-## Пользователям Windows
+### Пользователям Windows
 Пользователи Windows клонируют репозиторий в любое удобное место на компьютере, и далее ручками копируют папки Policies и Snippets в папку
-```bash
+```
 C:\Users\%USERNAME%\AppData\Roaming\MonoDevelop-X.X
 ```
 Копировать папку KeyBindings, равно как и делать репозиторий напрямую в папке настроек монодевелопа не рекомендуется. У макоси нет клавиши Control, а у винды нет клавиши Meta, так что их хоткеи несовместимы.
