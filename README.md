@@ -48,7 +48,7 @@ git pull origin master
  * Отправить изменения в основной репозиторий. Это делается с помощью кнопки Pull request.
 
 ## Ссылки 
- * [coding-style]: https://github.com/gaech/coding-style  (Соглашение о кодировании в компании Touch Instinct)
+ * https://github.com/gaech/coding-style
 
 ## TODO
  * Подсказка по хоткеям MonoDevelop
