@@ -7,8 +7,11 @@
       <NoTabsAfterNonTabs>True</NoTabsAfterNonTabs>
     </TextStylePolicy>
     <VersionControlPolicy inheritsSet="Mono" />
+
     <CSharpFormattingPolicy inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp">
+
       <IndentSwitchBody>True</IndentSwitchBody>
+
       <AnonymousMethodBraceStyle>NextLine</AnonymousMethodBraceStyle>
       <PropertyBraceStyle>NextLine</PropertyBraceStyle>
       <PropertyGetBraceStyle>NextLine</PropertyGetBraceStyle>
@@ -17,23 +20,37 @@
       <EventAddBraceStyle>NextLine</EventAddBraceStyle>
       <EventRemoveBraceStyle>NextLine</EventRemoveBraceStyle>
       <StatementBraceStyle>NextLine</StatementBraceStyle>
+
       <ForBraceForcement>AddBraces</ForBraceForcement>
       <WhileBraceForcement>AddBraces</WhileBraceForcement>
-	  <IfElseBraceForcement>AddBraces</IfElseBraceForcement>
+      <IfElseBraceForcement>AddBraces</IfElseBraceForcement>
+
       <ElseNewLinePlacement>NewLine</ElseNewLinePlacement>
       <ElseIfNewLinePlacement>SameLine</ElseIfNewLinePlacement>
       <CatchNewLinePlacement>NewLine</CatchNewLinePlacement>
       <FinallyNewLinePlacement>NewLine</FinallyNewLinePlacement>
       <WhileNewLinePlacement>NewLine</WhileNewLinePlacement>
+
       <BeforeMethodDeclarationParentheses>False</BeforeMethodDeclarationParentheses>
       <BeforeMethodCallParentheses>False</BeforeMethodCallParentheses>
       <BeforeConstructorDeclarationParentheses>False</BeforeConstructorDeclarationParentheses>
       <BeforeIndexerDeclarationBracket>False</BeforeIndexerDeclarationBracket>
       <BeforeDelegateDeclarationParentheses>False</BeforeDelegateDeclarationParentheses>
+
       <NewParentheses>False</NewParentheses>
-      <BeforeNewParameterComma>True</BeforeNewParameterComma>
       <SpacesBeforeBrackets>False</SpacesBeforeBrackets>
+
+      <BeforeNewParameterComma>False</BeforeNewParameterComma>
+      <AfterNewParameterComma>True</AfterNewParameterComma>
+      <BeforeDelegateDeclarationParameterComma>False</BeforeDelegateDeclarationParameterComma>
+      <AfterDelegateDeclarationParameterComma>True</AfterDelegateDeclarationParameterComma>
+      <BeforeConstructorDeclarationParameterComma>False</BeforeConstructorDeclarationParameterComma>
+      <AfterConstructorDeclarationParameterComma>True</AfterConstructorDeclarationParameterComma>
+      <BeforeMethodCallParameterComma>False</BeforeMethodCallParameterComma>
+      <AfterMethodCallParameterComma>True</AfterMethodCallParameterComma>
+
     </CSharpFormattingPolicy>
+
     <NameConventionPolicy>
       <Rules>
         <NamingRule>
