@@ -14,6 +14,13 @@ cp -R ~/Library/MonoDevelop-3.0/ ~/Library/MonoDevelop-3.0-orig/
 rm -rf ~/Library/MonoDevelop-3.0/
 git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelop-3.0/
 ```
+### Пользователям Windows
+Пользователи Windows клонируют репозиторий в любое удобное место на компьютере, и далее ручками копируют папки Policies и Snippets в папку
+```
+C:\Users\%USERNAME%\AppData\Roaming\MonoDevelop-X.X
+```
+Копировать папку KeyBindings, равно как и делать репозиторий напрямую в папке настроек монодевелопа, не рекомендуется. У макоси нет клавиши Control, а у винды нет клавиши Meta, так что их хоткеи несовместимы.
+
 После успешного клонирования надо изменить глобальные настройки MonoDevelop. `MonoDevelop → Preferences...`
 В разделе `Source code → .NET Naming Policies` выставляем `Policy: Touchin`
 
@@ -23,7 +30,7 @@ git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelo
 
 ![](https://github.com/gaech/monodevelop-settings/raw/2622dd2c61fe2cb0cbf9cd8220285ac95ab7c199/Screenshots/global-code-formating.jpg)
 
-В разделе `Source code → Name Conventions` выставляем `Policy: Touchin`
+В разделе `Source code → Name Conventions` выставляем `Policy: Touchin`  (для Monodeveop 2.8 и младше, походу, неактуально)
 
 ![](https://github.com/gaech/monodevelop-settings/raw/014f6c45b1b40f69aeba8641a3cca22af635abd9/Screenshots/global-name-convention.jpg)
 
@@ -40,6 +47,8 @@ git clone https://github.com/gaech/monodevelop-settings.git ~/Library/MonoDevelo
 cd ~/Library/MonoDevelop-3.0/
 git pull origin master
 ```
+
+Пользователи Windows делают почти то же самое, но в другую папку, и потом ручками заново копируют нужные настройки в AppData.
 
 ## Как поделиться своими наработками?
  * Сделать fork проекта. Для этого достаточно нажать кнопку Fork на этой странице.
